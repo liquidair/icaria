@@ -21,9 +21,11 @@
 title: Icaria Development Blog
 email: ark3nhammer@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Icaria Game Development Blog. We'll be writing about both design and techinical
-  aspects of our game development. Common topics will be Unity and C# development,
-  procedural generation, voxel worlds, and game design.
+  This blog covers both the design and development of Icaria.
+  We'll be covering covering game mechanics and the reasons behind them, the broad
+  architectural approach we have taken to building our code base, and many
+  development details including Unity and C# development, modelling and rendering,
+  procedural generation, and the particulars of tile-based worlds.
 baseurl: "/icaria" # the subpath of your site, e.g. /blog
 url: "https://liquidair.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: arkenhammer
