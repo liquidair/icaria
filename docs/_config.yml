@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Icaria Game Development Blog. We'll be writing about both design and techinical
   aspects of our game development. Common topics will be Unity and C# development,
   procedural generation, voxel worlds, and game design.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/icaria" # the subpath of your site, e.g. /blog
+url: "https://liquidair.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: arkenhammer
 github_username:  liquidair
 

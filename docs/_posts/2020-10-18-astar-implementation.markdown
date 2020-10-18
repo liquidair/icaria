@@ -1,5 +1,5 @@
 ---
-title: Icaria Path Finding
+title: Icaria A* Pathfinding Implementation
 ---
 
 ### What Makes This A* Special
