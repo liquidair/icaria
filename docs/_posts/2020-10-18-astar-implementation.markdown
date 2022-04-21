@@ -92,7 +92,7 @@ Our code for this operation looks like this:
     bool Explore()
     {
         const int SearchMax = 10000;
-        for (int count = 0; count &lt; SearchMax; ++count)
+        for (int count = 0; count < SearchMax; ++count)
         {
             AStar.OpenNode node;
             if (!AStar.TryPopOpenNode(out node))
@@ -100,7 +100,7 @@ Our code for this operation looks like this:
             int moveCount;
             Entity.Movement.GetCandidateMoves(
                 _candidateMoves, out moveCount, node.Placement);
-            for (int i = 0; i &lt; moveCount; ++i)
+            for (int i = 0; i < moveCount; ++i)
             {
                 int time = MovementTime(
                     node.Placement,
@@ -140,13 +140,13 @@ reverse moves which is how we back trace. During the back trace operation we fil
         int ZCost = 0;
         path.Add(placement);
         int GCost = AStar.NodeForPlacement(placement).GCost;
-        for (int i = 0; i &lt; 1000; ++i)
+        for (int i = 0; i < 1000; ++i)
         {
             int moveCount;
             Entity.Movement.GetCandidateMoves(_candidateMoves,
                 out moveCount, placement, true);
             int moveTime = int.MaxValue;
-            for (int j = 0; j &lt; moveCount; ++j)
+            for (int j = 0; j < moveCount; ++j)
             {
                 int candidateMoveTime = MovementTime(
                     _candidateMoves[j].Placement, placement,
@@ -155,12 +155,12 @@ reverse moves which is how we back trace. During the back trace operation we fil
                 {
                     AStar.Node node = AStar.NodeForPlacement(
                         _candidateMoves[j].Placement);
-                    if (ZCost + candidateMoveTime &lt; node.ZCost)
+                    if (ZCost + candidateMoveTime < node.ZCost)
                     {
                         AStar.SetZCost(_candidateMoves[j].Placement,
                             ZCost + candidateMoveTime);
                     }
-                    if (node.GCost &lt; GCost)
+                    if (node.GCost < GCost)
                     {
                         GCost = node.GCost;
                         placement = _candidateMoves[j].Placement;

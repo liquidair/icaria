@@ -8,14 +8,13 @@ at a minimum waiting for a transfer window home?
 
 The answer we came up with is Robot Ants--colonies of robots which are robust through cooperation and redundancy--discovering and
 harvesting resources to create the infrastructure for a permanent presence on Mars. From there we started thinking
-of how to build a game around the core idea of distributed compute with lots of simple robots which can explore, collect,
-and craft. We're building a game which borrows heavily from many games in the Survival, Crafting, Colony Builder and Automation
+of how to build a game around the core idea of distributed compute with lots of simple robots which can explore, collect, craft and achieve big goals by working together. We're building a game which borrows heavily from many games in the Survival, Crafting, Colony Builder and Automation
 genres but, inspired by one of my favorite GDC Talks, [Subnautica Postmortem](https://www.youtube.com/watch?v=fkjY_R7zQsM),
 we are choosing our spikes:
 
 - Exploration is the key driver of the game. The world should to be varied and surprising and our primary intrinsic rewards are the tools to see more of it.
 - Automation is mandatory for success. We want to minimize micro-management in favor of large-scale distributed and automated solutions.
-- 3rd person perspective with no player avatar.  As distinct from Minecraft, Factorio and Satisfactory, there is no direct manipulation--everything is done through your robots.
+- Perspective is 3rd person with no player avatar.  As distinct from Minecraft, Factorio and Satisfactory, there is no direct manipulation--everything is done through your robots.
 - Tile-based world with a height map. This means no Minecraft-like caves but it also means that, unlike Factorio, topology matters.
 
 The idea quickly left Mars and became "some exoplanet" as we wanted a much wider palette of terrain, resources and
