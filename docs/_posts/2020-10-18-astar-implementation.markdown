@@ -135,7 +135,7 @@ reverse moves which is how we back trace. During the back trace operation we fil
 
     bool BackTrace()
     {
-        List&ltplacement&gt path = new List&ltplacement&gt();
+        List<placement> path = new List<placement>();
         Placement placement = Destination;
         int ZCost = 0;
         path.Add(placement);
